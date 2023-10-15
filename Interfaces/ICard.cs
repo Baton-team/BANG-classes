@@ -9,6 +9,7 @@ namespace BANG-classes.Interfaces;
 internal interface ICard
 {
     string Name { get; }
+    bool playable;
 
     void PlayOn(IPlayer target);
 }
