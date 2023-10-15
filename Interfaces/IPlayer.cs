@@ -9,8 +9,10 @@ namespace BANG-classes.Interfaces;
 internal interface IPlayer
 {
 	string Name { get; set; }
-	ICharacter Character { get; set; }
+	int Health { get; set; }
 	Role Role { get; set; }
 
-	void UseCard(IPlayer target);
+	void UseCard(IPlayer target, ICard card);
+
+	void IsDeath();
 }

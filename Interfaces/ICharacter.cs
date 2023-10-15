@@ -6,11 +6,11 @@ using System.Threading.Tasks;
 
 namespace BANG-classes.Interfaces;
 
-internal interface ICharacter
+internal interface ICharacter : IPlayer
 {
-	string Name { get; }
-	int Health { get; }
+	string CharacterName { get; }
+	int MaxHealth { get; }
 
-	void UseCard(ICard card);
+	void UseCard(IPlayer target, ICard card);
 }
 
